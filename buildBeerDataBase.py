@@ -3,13 +3,13 @@ import sqlite3
 from bs4 import BeautifulSoup
 import requests
 import re
-##import scrapeStyles
-##import scrapeYeasts
-##import scrapeHops
-##import scrapeFermentables
-##import scrapeExtras
-##import scrapeRelatedStyles
-##import scrapeSubstituteHops
+import scrapeStyles
+import scrapeYeasts
+import scrapeHops
+import scrapeFermentables
+import scrapeExtras
+import scrapeRelatedStyles
+import scrapeSubstituteHops
 import scrapeRecipeBasics
 import scrapeRecipeYeasts
 import scrapeRecipeHops
@@ -31,39 +31,38 @@ c = conn.cursor()
 # ----------------------
 
 def main():
-##    scrapeStyles.main()
-##    scrapeYeasts.main()
-##    scrapeHops.main()
-##    scrapeFermentables.main()
-##    scrapeExtras.main()
-##    scrapeRelatedStyles.main()
-##    scrapeSubstituteHops.main()
-##    scrapeRecipeBasics.create_table()
-##    scrapeRecipeYeasts.create_table()
-##    scrapeRecipeHops.create_table()
-##    scrapeRecipeFermentables.create_table()
-##    scrapeRecipeExtras.create_table()
-##    scrapeRecipeMash.create_table()
-##    scrapeRecipeStats.create_table()
-    # skip last 2 on on pg 365
-    # skip last 7 on page 677
-    # skip the last one on page 5207
-    # skip the last one on page 6683
-    # skip the last 12 on page 6757
-    # skip the last one on page 9608
-    p = 10003
-    k = 298422
-    y = 315563
-    h = 1158216
-    f = 1303937
-    e = 273249
-    m = 101695
-    s = 298422
+    # scrape tables
+    scrapeStyles.main()
+    scrapeYeasts.main()
+    scrapeHops.main()
+    scrapeFermentables.main()
+    scrapeExtras.main()
+    scrapeRelatedStyles.main()
+    scrapeSubstituteHops.main()
+	# create tables for scraping recipes
+    scrapeRecipeBasics.create_table()
+    scrapeRecipeYeasts.create_table()
+    scrapeRecipeHops.create_table()
+    scrapeRecipeFermentables.create_table()
+    scrapeRecipeExtras.create_table()
+    scrapeRecipeMash.create_table()
+    scrapeRecipeStats.create_table()
+	# initialize table keys
+    p = 1
+    k = 1
+    y = 1
+    h = 1
+    f = 1
+    e = 1
+    m = 1
+    s = 1
+	# while page numbers exist
     while p < 10347:
         url = "https://www.brewtoad.com/recipes?page=%s&sort=created_at&sort_reverse=true" % p
         r = requests.get(url)
         soup = BeautifulSoup(r.content, "lxml")
         recipes = soup.find_all("li", {"class": "recipe-container"})
+		# scrape basics
         for recipe in recipes:
             try:
                 rec_name = scrapeRecipeBasics.getName(recipe)
@@ -80,6 +79,7 @@ def main():
             rec_name = scrapeRecipeYeasts.getName(recipe)
             page = requests.get(rec_url)
             pagesoup = BeautifulSoup(page.content, "lxml")
+			# scrape yeasts
             try:   
                 lines = pagesoup.find('body').find('div',{'class': 'site-container recipes recipes-show'}).find('div', {'class': 'subnav'}).find('div', {'class': 'recipe-show--ingredients'}).find('table', {'id': 'yeasts'}).find('tbody').find_all('tr')
                 for line in lines:
@@ -90,8 +90,8 @@ def main():
                     y = y + 1
             except:
                 pass
+			# scrape Hops
             try:
-
                 lines = pagesoup.find('body').find('div',{'class': 'site-container recipes recipes-show'}).find('div', {'class': 'subnav'}).find('div', {'class': 'recipe-show--ingredients'}).find('table', {'id': 'hops'}).find('tbody').find_all('tr')
                 for line in lines:
                     rec_amt = scrapeRecipeHops.getAmt(line)
@@ -104,6 +104,7 @@ def main():
                     h = h + 1
             except:
                 pass
+			# scrape fermentables
             try:
                 lines = pagesoup.find('body').find('div',{'class': 'site-container recipes recipes-show'}).find('div', {'class': 'subnav'}).find('div', {'class': 'recipe-show--ingredients'}).find('table', {'id': 'fermentables'}).find('tbody').find_all('tr')
                 for line in lines:
@@ -117,6 +118,7 @@ def main():
                     f = f + 1
             except:
                 pass
+				# scrape Extras
             try:
                 lines = pagesoup.find('body').find('div',{'class': 'site-container recipes recipes-show'}).find('div', {'class': 'subnav'}).find('div', {'class': 'recipe-show--ingredients'}).find('table', {'id': 'extras'}).find('tbody').find_all('tr')
                 for line in lines:
@@ -128,6 +130,7 @@ def main():
                     e = e + 1
             except:
                 pass
+			# scrape mash steps
             try:
                 lines = pagesoup.find('body').find('div',{'class': 'site-container recipes recipes-show'}).find('div', {'class': 'subnav'}).find('div', {'class': 'recipe-show--ingredients'}).find('table', {'id': 'mash_steps'}).find('tbody').find_all('tr')
                 for line in lines:
@@ -139,6 +142,7 @@ def main():
                     m = m + 1
             except:
                 pass
+			# scrape stats
             try:
                 lines = pagesoup.find('body').find('div',{'class': 'soft'})
                 rec_batch = scrapeRecipeStats.getBatch(lines)

@@ -1,0 +1,636 @@
+inputNum,name,country,alpha_min,alpha_max
+1,"
+3-6-9 Experimental (Simcoe Sister Strain) (US)
+","
+United States
+",10.7,10.7
+2,"
+Admiral (UK)
+","
+United Kingdom
+",13.5,16.0
+3,"
+Ahtanum (US)
+","
+United States
+",5.7,6.3
+4,"
+Amarillo (US)
+","
+United States
+",9.3,9.3
+5,"
+Apollo (US)
+","
+United States
+",18.0,21.0
+6,"
+Bramling Cross (UK)
+","
+United Kingdom
+",5.0,7.0
+7,"
+Bravo (US)
+","
+United States
+",13.0,13.0
+8,"
+Brewers Gold (DE)
+","
+Germany
+",5.5,6.5
+9,"
+Brewers Gold (US)
+","
+United States
+",8.0,10.0
+10,"
+Bullion (DE)
+","
+Germany
+",6.5,9.0
+11,"
+Calypso (US)
+","
+United States
+",12.0,14.0
+12,"
+Cascade (NZ)
+","
+New Zealand
+",6.0,8.0
+13,"
+Cascade (US)
+","
+United States
+",6.0,8.0
+14,"
+Centennial (US)
+","
+United States
+",9.5,11.5
+15,"
+Challenger (UK)
+","
+United Kingdom
+",6.5,8.5
+16,"
+Chelan (US)
+","
+United States
+",12.0,14.5
+17,"
+Chinook (US)
+","
+United States
+",11.0,13.0
+18,"
+Citra (US)
+","
+United States
+",13.3,14.0
+19,"
+Cluster (US)
+","
+United States
+",5.5,8.5
+20,"
+Columbus (US)
+","
+United States
+",14.0,16.0
+21,"
+Comet (US)
+","
+United States
+",9.5,9.5
+22,"
+Crystal (US)
+","
+United States
+",3.5,5.5
+23,"
+Delta (US)
+","
+United States
+",5.5,7.0
+24,"
+East Kent Golding (UK)
+","
+United Kingdom
+",4.0,6.0
+25,"
+El Dorado (US)
+","
+United States
+",15.0,17.0
+26,"
+Ella (Stella) (AU)
+","
+Australia
+",15.0,15.0
+27,"
+Endeavour (UK)
+","
+United Kingdom
+",8.0,10.5
+28,"
+Eroica (US)
+","
+United States
+",10.0,14.0
+29,"
+Falconer's Flight (US)
+","
+United States
+",10.5,10.5
+30,"
+First Gold (UK)
+","
+United Kingdom
+",6.5,8.5
+31,"
+Fuggle (UK)
+","
+United Kingdom
+",4.0,5.5
+32,"
+Fuggle (US)
+","
+United States
+",4.0,5.5
+33,"
+Galaxy (AU)
+","
+Australia
+",13.5,14.8
+34,"
+Galena (US)
+","
+United States
+",11.0,15.0
+35,"
+German Spalt Select (DE)
+","
+Germany
+",5.5,5.5
+36,"
+Glacier (US)
+","
+United States
+",4.9,7.1
+37,"
+Golding (UK)
+","
+United Kingdom
+",4.0,5.5
+38,"
+Golding (US)
+","
+United States
+",4.0,5.0
+39,"
+Green Bullet (NZ)
+","
+New Zealand
+",11.0,13.0
+40,"
+Hallertau (DE)
+","
+Germany
+",3.5,5.5
+41,"
+Hallertauer Aroma (NZ)
+","
+New Zealand
+",6.5,8.5
+42,"
+Hallertauer Mittelfrüh (DE)
+","
+Germany
+",3.0,5.5
+43,"
+Hallertauer Tradition (DE)
+","
+Germany
+",3.5,5.5
+44,"
+Hallertau Gold (DE)
+","
+Germany
+",6.0,6.5
+45,"
+Hallertau (US)
+","
+United States
+",3.5,5.5
+46,"
+Herald (UK)
+","
+United Kingdom
+",12.0,12.0
+47,"
+Herkules (DE)
+","
+Germany
+",12.0,17.0
+48,"
+Hersbrucker (DE)
+","
+Germany
+",3.0,5.5
+49,"
+Horizon (US)
+","
+United States
+",11.0,13.0
+50,"
+Kohatu (AU)
+","
+Australia
+",6.5,6.5
+51,"
+Liberty (US)
+","
+United States
+",3.0,5.0
+52,"
+Magnum (DE)
+","
+Germany
+",14.6,14.8
+53,"
+Magnum (US)
+","
+United States
+",12.0,14.0
+54,"
+Merkur (DE)
+","
+Germany
+",12.0,15.0
+55,"
+Millenium (US)
+","
+United States
+",15.5,15.5
+56,"
+Mosaic™ (US)
+","
+United States
+",11.5,13.5
+57,"
+Motueka (NZ)
+","
+New Zealand
+",6.5,7.5
+58,"
+Mount Hood (US)
+","
+United States
+",5.0,8.0
+59,"
+Mount Rainier (US)
+","
+United States
+",5.0,8.1
+60,"
+Nelson Sauvin (NZ)
+","
+New Zealand
+",12.5,12.5
+61,"
+Newport (US)
+","
+United States
+",13.5,17.0
+62,"
+Northdown (UK)
+","
+United Kingdom
+",7.5,9.5
+63,"
+Northern Brewer (DE)
+","
+Germany
+",7.0,10.0
+64,"
+Northern Brewer (US)
+","
+United States
+",9.0,9.0
+65,"
+Nugget (US)
+","
+United States
+",14.3,14.3
+66,"
+Olympic (US)
+","
+United States
+",11.0,13.0
+67,"
+Opal (DE)
+","
+Germany
+",5.0,8.0
+68,"
+Pacifica (NZ)
+","
+New Zealand
+",5.0,6.0
+69,"
+Pacific Gem (NZ)
+","
+New Zealand
+",14.6,14.6
+70,"
+Pacific Jade (NZ)
+","
+New Zealand
+",12.0,14.0
+71,"
+Palisade (US)
+","
+United States
+",6.6,9.5
+72,"
+Perle (US)
+","
+United States
+",6.0,9.5
+73,"
+Phoenix (UK)
+","
+United Kingdom
+",11.7,11.7
+74,"
+Pilgrim (UK)
+","
+United Kingdom
+",9.0,13.0
+75,"
+Pioneer (UK)
+","
+United Kingdom
+",8.0,10.0
+76,"
+Polaris (DE)
+","
+Germany
+",21.3,21.3
+77,"
+Polish Lublin (PL)
+","
+Poland
+",3.0,4.5
+78,"
+Pride of Ringwood (AU)
+","
+Australia
+",7.0,10.0
+79,"
+Progress (UK)
+","
+United Kingdom
+",5.0,7.5
+80,"
+Rakau (AU)
+","
+Australia
+",12.0,12.0
+81,"
+Riwaka (NZ)
+","
+New Zealand
+",4.5,6.5
+82,"
+Saaz (CZ)
+","
+Czech Republic
+",3.0,3.5
+83,"
+Saaz (US)
+","
+United States
+",3.0,4.5
+84,"
+San Juan Ruby Red (US)
+","
+United States
+",7.0,7.0
+85,"
+Santiam (US)
+","
+United States
+",5.0,7.0
+86,"
+Saphir (DE)
+","
+Germany
+",2.0,4.5
+87,"
+Satus (US)
+","
+United States
+",12.5,14.0
+88,"
+Silva (AU)
+","
+Australia
+",5.6,7.3
+89,"
+Simcoe (US)
+","
+United States
+",12.0,14.0
+90,"
+Smaragd (DE)
+","
+Germany
+",4.0,6.0
+91,"
+Sorachi Ace (JP)
+","
+Japan
+",10.7,12.2
+92,"
+Southern Cross (NZ)
+","
+New Zealand
+",11.0,14.0
+93,"
+Spalt (DE)
+","
+Germany
+",4.0,5.5
+94,"
+Spalt Select (DE)
+","
+Germany
+",4.0,6.0
+95,"
+Spalt Select (US)
+","
+United States
+",3.0,5.0
+96,"
+Sterling (US)
+","
+United States
+",6.0,9.0
+97,"
+Sticklebract (AU)
+","
+Australia
+",13.5,13.5
+98,"
+Strisselspalt (FR)
+","
+France
+",3.0,5.0
+99,"
+Styrian Arora (SI)
+","
+Slovenia
+",7.0,9.5
+100,"
+Styrian Bobek (SI)
+","
+Slovenia
+",3.5,7.0
+101,"
+Styrian Celeia (SI)
+","
+Slovenia
+",3.0,6.0
+102,"
+Styrian Golding (SI)
+","
+Slovenia
+",4.5,6.0
+103,"
+Summer (AU)
+","
+Australia
+",5.5,6.4
+104,"
+Summit (US)
+","
+United States
+",16.9,18.5
+105,"
+Super Galena (US)
+","
+United States
+",12.9,12.9
+106,"
+Super Pride (AU)
+","
+Australia
+",13.0,15.0
+107,"
+Sylva (AU)
+","
+Australia
+",5.6,7.3
+108,"
+Tardif de Bourgogne (FR)
+","
+France
+",3.1,5.5
+109,"
+Target (UK)
+","
+United Kingdom
+",9.5,12.5
+110,"
+Taurus (DE)
+","
+Germany
+",12.0,17.0
+111,"
+Tettnanger (DE)
+","
+Germany
+",3.5,5.5
+112,"
+Tettnanger (US)
+","
+United States
+",4.0,5.0
+113,"
+Tomahawk (US)
+","
+United States
+",14.0,18.0
+114,"
+Topaz (AU)
+","
+Australia
+",16.4,16.4
+115,"
+Tradition (DE)
+","
+Germany
+",5.0,7.0
+116,"
+Ultra (US)
+","
+United States
+",4.5,5.0
+117,"
+Vanguard (US)
+","
+United States
+",4.0,5.7
+118,"
+Vic Secret (AU)
+","
+Australia
+",14.0,17.0
+119,"
+Wai-iti (NZ)
+","
+New Zealand
+",3.5,3.5
+120,"
+Waimea (NZ)
+","
+New Zealand
+",13.9,14.9
+121,"
+Warrior (US)
+","
+United States
+",15.0,17.0
+122,"
+WGV (Whitbread Golding Variety) (UK)
+","
+United Kingdom
+",5.0,7.0
+123,"
+Willamette (US)
+","
+United States
+",4.0,6.0
+124,"
+Williamette (US)
+","
+United States
+",5.0,7.0
+125,"
+Yakima Cluster (US)
+","
+United States
+",6.0,8.5
+126,"
+Zeus (US)
+","
+United States
+",13.0,17.0
+127,"
+Zythos (US)
+","
+United States
+",10.0,12.0
